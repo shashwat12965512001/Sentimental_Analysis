@@ -171,7 +171,7 @@
       var formData = new FormData();
       formData.append("file", csvFileInput.files[0]);
 
-      fetch("http://127.0.0.1:5000/predict", {
+      fetch("https://shashwat.lookhype.com/predict", {
         method: "POST",
         body: formData
       })
@@ -207,7 +207,7 @@
 
     } else if (textInput.value.trim() !== "") {
       // Predict on single sentence
-      fetch("http://127.0.0.1:5000/predict", {
+      fetch("https://shashwat.lookhype.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

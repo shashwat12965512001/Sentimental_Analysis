@@ -6,7 +6,7 @@ from io import BytesIO
 from urllib.parse import urlparse
 
 # flask --app api.py run --port=5000
-prediction_endpoint = f"http://127.0.0.1:5000/predict"
+prediction_endpoint = f"https://shashwat.lookhype.com/predict"
 
 st.title("Text Sentiment Predictor")
 
