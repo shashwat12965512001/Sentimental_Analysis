@@ -14,16 +14,6 @@ STOPWORDS = set(stopwords.words("english"))
 
 app = Flask(__name__)
 
-# Route to download the zip file
-@app.route("/download-zip")
-def download_zip():
-    # Path to the local zip file you want to download
-    zip_path = "ashu.zip"
-
-    # Send the file for download
-    return send_file(zip_path, as_attachment=True, mimetype="application/zip", download_name="yourfile.zip")
-
-
 @app.route("/test", methods=["GET"])
 def test():
     return "Test request received successfully. Service is running."
